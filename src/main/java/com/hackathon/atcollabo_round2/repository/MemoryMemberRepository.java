@@ -6,6 +6,9 @@ import java.util.*;
 
 public class MemoryMemberRepository implements MemberRepository {
     private static Map<Long, Member> store = new HashMap<>();
+    /**
+     * sequence mean id for user
+      */
     private static long sequence = 0L;
 
     @Override
@@ -34,6 +37,7 @@ public class MemoryMemberRepository implements MemberRepository {
         return new ArrayList<>(store.values());
     }
 
+    // Use for Test case
     public void clearStore() {
         store.clear();
     }

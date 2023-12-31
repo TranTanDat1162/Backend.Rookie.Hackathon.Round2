@@ -19,7 +19,7 @@ public class MemberService {
     /**
      *
      * @param member
-     * Member join
+     * Member join (using for add user in table)
      * @return member.getId()
      */
     public Long join(Member member) {
