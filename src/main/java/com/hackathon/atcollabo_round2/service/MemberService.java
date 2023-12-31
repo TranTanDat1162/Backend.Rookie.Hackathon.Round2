@@ -2,11 +2,12 @@ package com.hackathon.atcollabo_round2.service;
 
 import com.hackathon.atcollabo_round2.domain.Member;
 import com.hackathon.atcollabo_round2.repository.MemberRepository;
+import jakarta.transaction.Transactional;
 
 import java.util.List;
 import java.util.Optional;
 
-//@Transactional // for all
+@Transactional // for all
 public class MemberService {
     private final MemberRepository memberRepository;
     
